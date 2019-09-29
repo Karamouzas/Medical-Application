@@ -20,7 +20,7 @@ namespace MedicalApplicationMVVM.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            //WE DID IT
             LoadApplication(new MedicalApplicationMVVM.App());
         }
     }
