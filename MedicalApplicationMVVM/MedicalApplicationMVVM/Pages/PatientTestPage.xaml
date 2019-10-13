@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApplicationMVVM.PatientTestPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="PatientTest.png"/>
+            <Label Text="Οι εξετάσεις μου" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <ScrollView>
+                <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Center"  >
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Αρτηριακη πιεση" Command="{Binding NavigateTestPage}"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Γλυκοζη"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Θερμοκρασια"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Καρδιακοι Παλμοι"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                    <Button FlexLayout.Basis="33%" HeightRequest="100" Text="Test"/>
+                </FlexLayout>
+            </ScrollView>
+            <Frame Grid.Row="1" BackgroundColor="#F44336" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="Help.png" />
+                    <Image Grid.Column="1" Source="MenuHome.png"/>
+                    <Image Grid.Column="2" Source="Add.png"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

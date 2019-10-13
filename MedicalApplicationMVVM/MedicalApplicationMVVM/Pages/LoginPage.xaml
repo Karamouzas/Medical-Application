@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApplicationMVVM.LoginPage">
+    <ContentPage.Content>
+        <StackLayout  Margin="50,0,50,0">
+            <Image Source="healthbook.png" WidthRequest="{OnPlatform iOS=300, Android=200}"/>
+            <Label Text="Medical Helper" FontSize="Title" TextColor="#BF360C" HorizontalTextAlignment="Center" FontAttributes="Bold" />
+            <Label Text="Όνομα Χρήστη"/>
+            <Entry Text="username"/>
+            <Label Text="Κωδικός Πρόσβασης"/>
+            <Entry Text="password" IsPassword="True"/>
+
+            <Button x:Name="btnLogin" Command="{Binding NavigateMenuPage}" Text="Σύνδεση" Margin="50,0,50,0" BackgroundColor="#F44336" TextColor="#FFFFFF" />
+            <Button x:Name="btnRegister" Text="Νεος χρηστης" Margin="50,0,50,0" BackgroundColor="#F44336" TextColor="#FFFFFF" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

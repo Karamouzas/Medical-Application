@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApplicationMVVM.TestPage">
+    <ContentPage.Content>
+        
+        <StackLayout >
+            <Image Source="Test.png"/>
+            <Label Text="Αρτηριακή Πίεση" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <Label Text="Περιγραφή:" Margin="20,10,20,0"/>
+            <Label Margin="20,0,20,5" Text="Αρτηριακή πίεση είναι η πίεση που ασκεί το αίμα στο τοίχωμα των αρτηριών καθώς ρέει μέσα σε αυτές. Η αρτηριακή πίεση εξαρτάται από την ροή του αίματος (πόσο αίμα στέλνει η καρδιά μας σε κάθε συστολή) και από την αντίσταση που προβάλουν τα αγγεία μας στην ροή αυτή. Εάν η αρτηριακή πίεση είναι υψηλή, τότε η καρδιά μας πρέπει να εργαστεί δυνατότερα για να διατηρήσει επαρκή ροή αίματος στο σώμα μας."/>
+            
+            <Button  x:Name="btnNewMeasurement" Text="Νεα Μετρηση" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" />
+            <Button x:Name="btnHistory" Text="Ιστορικο" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" />
+            <Button x:Name="btnReminder" Text="Υπενθυμιση" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" Command="{Binding NavigateReminderTestPage}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

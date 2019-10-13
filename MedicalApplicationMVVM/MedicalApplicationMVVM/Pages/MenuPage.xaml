@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApplicationMVVM.MenuPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="lblMenu" Text="Επιλογες" FontSize="Title"/>
+            <Button x:Name="btnProfile" Text="Προφιλ" BackgroundColor="#F44336" TextColor="#FFFFFF" Command="{Binding NavigateProfilePage}" />
+            <Button x:Name="btnMeasurements" Text="Εξετασεις" BackgroundColor="#3498db"  TextColor="#FFFFFF" Command="{Binding NavigatePatientTestPage}"  />
+            <Button x:Name="btnDrugs" Text="Φαρμακα" BackgroundColor="#2ecc71" TextColor="#FFFFFF" Command="{Binding NavigatePatientDrugPage}"/>
+            <Button x:Name="btnSupervisors" Text="Επιβλεποντες" BackgroundColor="#e67e22" TextColor="#FFFFFF" Command="{Binding NavigateSupervisorPage}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

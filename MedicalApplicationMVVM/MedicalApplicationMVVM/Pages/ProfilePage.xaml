@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApplicationMVVM.ProfilePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="Profile.png"/>
+            <Grid HorizontalOptions ="FillAndExpand" Margin="50,0,50,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="Όνομα:" FontSize="Large" VerticalTextAlignment="Center"/>
+                <Entry x:Name="txtFirstName" Grid.Column="1" Grid.Row="0" Text="Άγγελος" IsReadOnly="True"/>
+
+                <Label Grid.Column="0" Grid.Row="1" Text="Επώνυμο:" FontSize="Large" VerticalTextAlignment="Center"/>
+                <Entry x:Name="txtLastName" Grid.Column="1" Grid.Row="1" Text="Μαστρολόρελ" IsReadOnly="True"/>
+
+                <Label Grid.Column="0" Grid.Row="2" Text="Ηλικία:" FontSize="Large" VerticalTextAlignment="Center"/>
+                <Entry x:Name="Age" Grid.Column="1" Grid.Row="2" Text="200" IsReadOnly="True"/>
+
+                <Label Grid.Column="0" Grid.Row="3" Text="ΑΜΚΑ:" FontSize="Large" VerticalTextAlignment="Center"/>
+                <Entry x:Name="txtAMKA" Grid.Column="1" Grid.Row="3" Text="123456789" IsReadOnly="True"/>
+
+            </Grid>
+            <Button x:Name="btnEdit" Text="Επεξεργασια" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF"/>
+            <Button x:Name="btnAllergies" Text="Αλεργιες" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" Command="{Binding NavigateAllergyPage}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

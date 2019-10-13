@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApplicationMVVM.SupervisorPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="Doctor.png"/>
+            <Label Text="Επιβλέποντες Ιατροί" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <ScrollView>
+                <StackLayout Margin="30,0,30,0" Padding="0,0,0,50">
+                    <Frame BorderColor="Orange">
+                        <StackLayout>
+                            <Label>Μάριος Κάζαγλης</Label>
+                            <Label>Παθολόγος</Label>
+                            <Label >6987654321</Label>
+                            <Label>Πίνδου 60</Label>
+                            <Button Text="Κληση" ></Button>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BorderColor="Orange">
+                        <StackLayout   >
+                            <Label>Άγγελος Μαστρογιάννης</Label>
+                            <Label>Γυναικολόγος</Label>
+                            <Label>6987654321</Label>
+                            <Label>Καισαρείας 45</Label>
+                            <Button Text="Κληση" ></Button>
+                        </StackLayout>
+                    </Frame>
+                    
+
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

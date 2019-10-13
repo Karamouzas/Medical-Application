@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApplicationMVVM.DrugPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="Drug.png"/>
+            <Label Text="Τελοπόν" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <Label Text="Περιγραφή:" Margin="20,10,20,0"/>
+            <Label Margin="20,0,20,5" Text="Ένα πραγματικά θαυματουργό σκεύασμα έρχεται στην αγορά για να εξαφανίσει τους πόνους στις αρθρώσεις που σε συνδυασμό με ισορροπημένη διατροφή καταφέρνει να δώσει στον οργανισμό όλα όσα του λείπουν με απίστευτα αποτελέσματα!"/>
+
+            <Button x:Name="btnDrugReminder" Text="Υπενθυμιση" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
