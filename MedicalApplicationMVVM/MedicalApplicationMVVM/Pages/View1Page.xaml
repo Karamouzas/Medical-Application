@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApplicationMVVM.View1Page">
+  <ContentView.Content>
+        <Frame Grid.Row="0" BorderColor="#e67e22">
+            <Grid VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Κυρ"/>
+                <Label Grid.Column="1" Text="Δευ" TextColor="#e67e22"/>
+                <Label Grid.Column="2" Text="Τρι" TextColor="#e67e22"/>
+                <Label Grid.Column="3" Text="Τερ" TextColor="#e67e22"/>
+                <Label Grid.Column="4" Text="Πεμ" TextColor="#e67e22"/>
+                <Label Grid.Column="5" Text="Παρ" TextColor="#e67e22"/>
+                <Label Grid.Column="6" Text="Σαβ"/>
+                <Label Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="1" Text="09:00" TextColor="#e67e22" FontSize="50"/>
+                <StackLayout Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="2">
+                    <Label Text="Εξετάσεις" FontSize="25" TextColor="#e67e22"/>
+                    <Label Text="Πίεση,Θερμοκρασία" FontSize="25"/>
+                    <Label Text="Φάρμακα" FontSize="25" TextColor="#e67e22"/>
+                    <Label Text="DEPON,PONSTAN" FontSize="25"/>
+                </StackLayout>
+
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

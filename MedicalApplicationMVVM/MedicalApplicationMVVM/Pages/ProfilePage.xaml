@@ -7,8 +7,8 @@
              x:Class="MedicalApplicationMVVM.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="Profile.png"/>
-            <Grid HorizontalOptions ="FillAndExpand" Margin="50,0,50,0">
+            <Image Source="Profile.png" VerticalOptions="Start"/>
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions ="FillAndExpand" Margin="50,0,50,0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -35,9 +35,26 @@
                 <Entry x:Name="txtAMKA" Grid.Column="1" Grid.Row="3" Text="123456789" IsReadOnly="True"/>
 
             </Grid>
+            
             <Button x:Name="btnEdit" Text="Επεξεργασια" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF"/>
             <Button x:Name="btnAllergies" Text="Αλεργιες" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" Command="{Binding NavigateAllergyPage}"/>
 
+            <Frame BackgroundColor="#F44336" VerticalOptions="End">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="Help.png" />
+                    <Image Grid.Column="1" Source="MenuHome.png"/>
+                    <Image Grid.Column="2" Source="Edit.png"/>
+                </Grid>
+            </Frame>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

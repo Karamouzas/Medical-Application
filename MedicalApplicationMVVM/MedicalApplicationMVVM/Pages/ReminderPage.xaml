@@ -3,17 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="MedicalApplicationMVVM.DrugPage">
+             xmlns:views="clr-namespace:MedicalApplicationMVVM"
+             mc:Ignorable="d" 
+             BindingContextChanged="ContentPage_BindingContextChanged"
+             x:Class="MedicalApplicationMVVM.ReminderPage">
+
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="Drug.png"/>
-            <Label Text="Παρακεταμόλη" FontSize="Title" HorizontalTextAlignment="Center"/>
-            <Label Text="Περιγραφή:" Margin="20,10,20,0"/>
+            <StackLayout.Resources>
+                <DataTemplate x:Key="test">
+                    <views:ReminderInfoPage />
+                </DataTemplate>
 
-            <ScrollView VerticalOptions="FillAndExpand">
-                <Label Margin="20,0,20,5" Text="Η παρακεταμόλη ή ακεταμινοφαίνη είναι φάρμακο με αναλγητική και αντιπυρετική δράση, αλλά με ασθενείς αντιφλεγμονώδεις δράσεις, το οποίο χρησιμοποιείται εκτενώς χωρίς να απαιτείται συνταγή γιατρού. Σε θεραπευτικές δόσεις έχει λιγότερες παρενέργειες απ' ό, τι η ασπιρίνη."/>
-            </ScrollView>
+            </StackLayout.Resources>
+            <Image Source="Reminder.png"/>
+            <Label Text="Υπενθυμήσεις" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <!--<ScrollView VerticalOptions="FillAndExpand">
+                <ContentView x:Name="View1Page">
+                    
+                </ContentView>
+            </ScrollView>-->
+            <CollectionView ItemTemplate="{StaticResource test}" SelectionMode="None" ItemsSource="{Binding ReminderList}">
+
+            </CollectionView>
             <Frame BackgroundColor="#F44336" VerticalOptions="End">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -29,8 +41,6 @@
                     <Image Grid.Column="2" Source="Add.png"/>
                 </Grid>
             </Frame>
-            <!--<Button x:Name="btnDrugReminder" Text="Υπενθυμιση" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" />-->
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

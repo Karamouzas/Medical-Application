@@ -6,44 +6,42 @@
              mc:Ignorable="d"
              x:Class="MedicalApplicationMVVM.AllergyPage">
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="70"/>
-            </Grid.RowDefinitions>
-            <StackLayout Grid.Row="0">
-                <Image Source="Allergy.png"/>
-                <Label Text="Αλλεργίες" FontSize="Title" HorizontalTextAlignment="Center"/>
-                <ScrollView >
-                    <StackLayout Margin="30,0,30,0" Padding="0,0,0,50">
-                        <Frame BorderColor="#3498db">
-                            <StackLayout>
-                                <Label>Κωιδικός Αλλεργίας</Label>
-                                <Label>Όνομα Αλλεργίας</Label>
-                            </StackLayout>
-                        </Frame>
 
-                        <Frame BorderColor="#3498db">
-                            <StackLayout>
-                                <Label>Κωιδικός Αλλεργίας</Label>
-                                <Label>Όνομα Αλλεργίας</Label>
-                            </StackLayout>
-                        </Frame>
+        <StackLayout>
+            <Image Source="Allergy.png"/>
+            <Label Text="Αλλεργίες" FontSize="Title" HorizontalTextAlignment="Center"/>
+            
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout Margin="30,0,30,0" Padding="0,0,0,50">
+                    <Frame BorderColor="#3498db">
+                        <StackLayout>
+                            <Label>Κωιδικός Αλλεργίας</Label>
+                            <Label>Όνομα Αλλεργίας</Label>
+                        </StackLayout>
+                    </Frame>
 
-                        <Frame BorderColor="#3498db">
-                            <StackLayout>
-                                <Label>Κωιδικός Αλλεργίας</Label>
-                                <Label>Όνομα Αλλεργίας</Label>
-                            </StackLayout>
-                        </Frame>
+                    <Frame BorderColor="#3498db">
+                        <StackLayout>
+                            <Label>Κωιδικός Αλλεργίας</Label>
+                            <Label>Όνομα Αλλεργίας</Label>
+                        </StackLayout>
+                    </Frame>
 
-                    </StackLayout>
+                    <Frame BorderColor="#3498db">
+                        <StackLayout>
+                            <Label>Κωιδικός Αλλεργίας</Label>
+                            <Label>Όνομα Αλλεργίας</Label>
+                        </StackLayout>
+                    </Frame>
 
-                </ScrollView>
+                </StackLayout>
+            </ScrollView>
 
-            </StackLayout>
-            <Frame Grid.Row="1" BackgroundColor="#F44336" >
+            <Frame BackgroundColor="#F44336" VerticalOptions="End">
                 <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
@@ -54,7 +52,6 @@
                     <Image Grid.Column="2" Source="Add.png"/>
                 </Grid>
             </Frame>
-        </Grid>
-        
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

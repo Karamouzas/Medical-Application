@@ -6,17 +6,31 @@
              mc:Ignorable="d"
              x:Class="MedicalApplicationMVVM.TestPage">
     <ContentPage.Content>
-        
-        <StackLayout >
-            <Image Source="Test.png"/>
-            <Label Text="Αρτηριακή Πίεση" FontSize="Title" HorizontalTextAlignment="Center"/>
-            <Label Text="Περιγραφή:" Margin="20,10,20,0"/>
-            <Label Margin="20,0,20,5" Text="Αρτηριακή πίεση είναι η πίεση που ασκεί το αίμα στο τοίχωμα των αρτηριών καθώς ρέει μέσα σε αυτές. Η αρτηριακή πίεση εξαρτάται από την ροή του αίματος (πόσο αίμα στέλνει η καρδιά μας σε κάθε συστολή) και από την αντίσταση που προβάλουν τα αγγεία μας στην ροή αυτή. Εάν η αρτηριακή πίεση είναι υψηλή, τότε η καρδιά μας πρέπει να εργαστεί δυνατότερα για να διατηρήσει επαρκή ροή αίματος στο σώμα μας."/>
-            
-            <Button  x:Name="btnNewMeasurement" Text="Νεα Μετρηση" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" />
-            <Button x:Name="btnHistory" Text="Ιστορικο" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" />
-            <Button x:Name="btnReminder" Text="Υπενθυμιση" Margin="50,0,50,0" BackgroundColor="#3498db" TextColor="#FFFFFF" Command="{Binding NavigateReminderTestPage}"/>
-
+        <StackLayout>
+        <Image Source="Test.png"/>
+        <Label Text="Αρτηριακή Πίεση" FontSize="Title" HorizontalTextAlignment="Center"/>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <Label Text="Περιγραφή:" Margin="20,10,20,0"/>
+                <Label Margin="20,0,20,5" Text="Αρτηριακή πίεση είναι η πίεση που ασκεί το αίμα στο τοίχωμα των αρτηριών καθώς ρέει μέσα σε αυτές. Η αρτηριακή πίεση εξαρτάται από την ροή του αίματος (πόσο αίμα στέλνει η καρδιά μας σε κάθε συστολή) και από την αντίσταση που προβάλουν τα αγγεία μας στην ροή αυτή. Εάν η αρτηριακή πίεση είναι υψηλή, τότε η καρδιά μας πρέπει να εργαστεί δυνατότερα για να διατηρήσει επαρκή ροή αίματος στο σώμα μας."/>
+                <Label Text="Υπενθυμήσεις:" Margin="20,10,20,0"/>
+            </StackLayout>
+        </ScrollView>
+        <Frame BackgroundColor="#F44336" VerticalOptions="End">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="Help.png" />
+                <Image Grid.Column="1" Source="MenuHome.png"/>
+                <Image Grid.Column="2" Source="Add.png"/>
+            </Grid>
+        </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

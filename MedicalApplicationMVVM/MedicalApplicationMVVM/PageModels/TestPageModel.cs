@@ -29,17 +29,6 @@ namespace MedicalApplicationMVVM
             base.ViewIsDisappearing(sender, e);
         }
         #endregion
-
-        public Command NavigateReminderTestPage
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    await CoreMethods.PushPageModel<ReminderTestPageModel>();
-                });
-            }
-        }
         
     }
 }

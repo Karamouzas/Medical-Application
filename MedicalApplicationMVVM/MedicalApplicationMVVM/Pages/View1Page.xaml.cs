@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MedicalApplicationMVVM
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ReminderDrugPage : ContentPage
+    public partial class View1Page : ContentView
     {
-        public ReminderDrugPage()
+        public View1Page()
         {
             InitializeComponent();
         }

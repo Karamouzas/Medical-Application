@@ -11,7 +11,8 @@
             <Button x:Name="btnProfile" Text="Προφιλ" BackgroundColor="#F44336" TextColor="#FFFFFF" Command="{Binding NavigateProfilePage}" />
             <Button x:Name="btnMeasurements" Text="Εξετασεις" BackgroundColor="#3498db"  TextColor="#FFFFFF" Command="{Binding NavigatePatientTestPage}"  />
             <Button x:Name="btnDrugs" Text="Φαρμακα" BackgroundColor="#2ecc71" TextColor="#FFFFFF" Command="{Binding NavigatePatientDrugPage}"/>
-            <Button x:Name="btnSupervisors" Text="Επιβλεποντες" BackgroundColor="#e67e22" TextColor="#FFFFFF" Command="{Binding NavigateSupervisorPage}" />
+            <Button x:Name="btnSupervisors" Text="Επιβλεποντες" BackgroundColor="#9b59b6"  TextColor="#FFFFFF" Command="{Binding NavigateSupervisorPage}" />
+            <Button x:Name="btnReminders" Text="Υπενθυμισεις" BackgroundColor="#e67e22" TextColor="#FFFFFF" Command="{Binding NavigateReminderPage}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -52,7 +52,6 @@ namespace MedicalApplicationMVVM
                 });
             }
         }
-        
         public Command NavigatePatientDrugPage
         {
             get
@@ -63,7 +62,6 @@ namespace MedicalApplicationMVVM
                 });
             }
         }
-
         public Command NavigateSupervisorPage
         {
             get
@@ -74,5 +72,16 @@ namespace MedicalApplicationMVVM
                 });
             }
         }
+        public Command NavigateReminderPage
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await CoreMethods.PushPageModel<ReminderPageModel>();
+                });
+            }
+        }
+        
     }
 }

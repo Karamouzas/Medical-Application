@@ -40,8 +40,11 @@
                     <Button FlexLayout.Basis="33%" HeightRequest="100"  Text="Test"/>
                 </FlexLayout>
             </ScrollView>
-            <Frame Grid.Row="1" BackgroundColor="#F44336" >
+            <Frame Grid.Row="1" BackgroundColor="#F44336" VerticalOptions="End">
                 <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
