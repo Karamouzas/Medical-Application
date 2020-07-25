@@ -1,10 +1,11 @@
 ﻿using FreshMvvm;
+using PatientAppMVVM;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace MedicalApplicationMVVM
+namespace PatientAppLib
 {
     public class MenuPageModel : FreshBasePageModel
     {

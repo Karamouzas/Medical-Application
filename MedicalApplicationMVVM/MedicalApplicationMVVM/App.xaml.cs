@@ -3,7 +3,7 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MedicalApplicationMVVM
+namespace PatientAppLib
 {
     public partial class App : Application
     {

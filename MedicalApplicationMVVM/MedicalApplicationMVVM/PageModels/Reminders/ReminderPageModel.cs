@@ -1,11 +1,12 @@
 ﻿using FreshMvvm;
+using PatientAppLib;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using Xamarin.Forms;
 
-namespace MedicalApplicationMVVM
+namespace PatientAppMVVM
 {
     public class ReminderPageModel : FreshBasePageModel
     {

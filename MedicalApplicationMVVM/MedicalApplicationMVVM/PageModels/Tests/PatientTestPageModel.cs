@@ -2,10 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
 
-namespace MedicalApplicationMVVM
+namespace PatientAppLib
 {
-    public class AllergyPageModel : FreshBasePageModel
+    public class PatientTestPageModel : FreshBasePageModel
     {
         #region Default Override functions  
         public override void Init(object initData)
@@ -29,5 +30,15 @@ namespace MedicalApplicationMVVM
         }
         #endregion
 
+        public Command NavigateTestPage
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await CoreMethods.PushPageModel<TestPageModel>();
+                });
+            }
+        }
     }
 }

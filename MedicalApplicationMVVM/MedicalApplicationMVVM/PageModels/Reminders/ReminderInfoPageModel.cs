@@ -1,12 +1,18 @@
 ﻿using FreshMvvm;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace MedicalApplicationMVVM
+namespace PatientAppLib
 {
-    public class DrugPageModel : FreshBasePageModel
+    public class ReminderInfoPageModel : FreshBasePageModel
     {
+        private string _testLabel;
+
+        public string TestLabel
+        {
+            get { return _testLabel; }
+            set { _testLabel = value; RaisePropertyChanged(); }
+        }
+
         #region Default Override functions  
         public override void Init(object initData)
         {

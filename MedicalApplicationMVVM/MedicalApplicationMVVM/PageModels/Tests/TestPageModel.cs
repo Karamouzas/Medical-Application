@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace MedicalApplicationMVVM
+namespace PatientAppLib
 {
-    public class PatientTestPageModel : FreshBasePageModel
+    public class TestPageModel : FreshBasePageModel
     {
         #region Default Override functions  
         public override void Init(object initData)
@@ -29,16 +29,6 @@ namespace MedicalApplicationMVVM
             base.ViewIsDisappearing(sender, e);
         }
         #endregion
-
-        public Command NavigateTestPage
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    await CoreMethods.PushPageModel<TestPageModel>();
-                });
-            }
-        }
+        
     }
 }

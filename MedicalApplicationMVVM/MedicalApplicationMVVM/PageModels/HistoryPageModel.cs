@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MedicalApplicationMVVM
+namespace PatientAppLib
 {
     public class HistoryPageModel : FreshBasePageModel
     {

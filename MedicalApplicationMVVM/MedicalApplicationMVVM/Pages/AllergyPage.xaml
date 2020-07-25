@@ -3,16 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:PatientAppLib"
              mc:Ignorable="d"
-             x:Class="MedicalApplicationMVVM.AllergyPage">
+             x:Class="PatientAppLib.AllergyPage">
     <ContentPage.Content>
 
-        <StackLayout>
+        <StackLayout >
+            <StackLayout.Resources>
+                <DataTemplate x:Key="keyAllergyInfoPage">
+                    <views:AllergyInfoPage />
+                </DataTemplate>
+
+            </StackLayout.Resources>
             <Image Source="Allergy.png"/>
             <Label Text="Αλλεργίες" FontSize="Title" HorizontalTextAlignment="Center"/>
             
-            <ScrollView VerticalOptions="FillAndExpand">
-                <StackLayout Margin="30,0,30,0" Padding="0,0,0,50">
+            <ScrollView VerticalOptions="FillAndExpand" Margin="30,0,30,0" Padding="0,0,0,50">
+                <CollectionView  ItemTemplate="{StaticResource keyAllergyInfoPage}" SelectionMode="None" ItemsSource="{Binding AllergyList}">
+
+                </CollectionView>
+
+                <!--<StackLayout Margin="30,0,30,0" Padding="0,0,0,50">
                     <Frame BorderColor="#3498db">
                         <StackLayout>
                             <Label>Κωιδικός Αλλεργίας</Label>
@@ -34,7 +45,7 @@
                         </StackLayout>
                     </Frame>
 
-                </StackLayout>
+                </StackLayout>-->
             </ScrollView>
 
             <Frame BackgroundColor="#F44336" VerticalOptions="End">

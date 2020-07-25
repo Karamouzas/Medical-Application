@@ -1,13 +1,30 @@
 ﻿using FreshMvvm;
+using PatientAppLib.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Xamarin.Forms;
 
-namespace MedicalApplicationMVVM
+namespace PatientAppLib
 {
-    public class TestPageModel : FreshBasePageModel
+    public class AllergyInfoPageModel : FreshBasePageModel
     {
+        private long _AllergyIdLabel;
+        private string _AllergyDescriptionLabel;
+
+        public long AllergyIdLabel
+        {
+            get { return _AllergyIdLabel; }
+            set { _AllergyIdLabel = value; RaisePropertyChanged(); }
+
+        }
+        public string AllergyDescriptionLabel
+        {
+            get { return _AllergyDescriptionLabel; }
+            set { _AllergyDescriptionLabel = value; RaisePropertyChanged(); }
+        }
+
+
+
         #region Default Override functions  
         public override void Init(object initData)
         {
@@ -29,6 +46,6 @@ namespace MedicalApplicationMVVM
             base.ViewIsDisappearing(sender, e);
         }
         #endregion
-        
+
     }
 }

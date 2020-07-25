@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MedicalApplicationMVVM.ProfilePage">
+             x:Class="PatientAppLib.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
             <Image Source="Profile.png" VerticalOptions="Start"/>
