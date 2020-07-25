@@ -103,7 +103,7 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MedicalApplicationMVVM\PatientAppLib.csproj">
+    <ProjectReference Include="..\PatientAppMVVM\PatientAppLib.csproj">
       <Project>{CDFE0B2B-930A-4E5C-954B-167F9E31A36E}</Project>
       <Name>PatientAppLib</Name>
     </ProjectReference>
